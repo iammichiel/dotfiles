@@ -1,0 +1,89 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/cask": {
+        "revision": "0030c1f06ef8b8b32da022ae8b95c7b104dc69b4"
+      }
+    },
+    "cask": {
+      "keepassxc": {
+        "version": "2.7.4",
+        "options": {
+          "full_name": "keepassxc"
+        }
+      },
+      "dozer": {
+        "version": "4.0.0",
+        "options": {
+          "full_name": "dozer"
+        }
+      },
+      "jetbrains-toolbox": {
+        "version": "1.28.1,1.28.1.15219",
+        "options": {
+          "full_name": "jetbrains-toolbox"
+        }
+      },
+      "keepingyouawake": {
+        "version": "1.6.4",
+        "options": {
+          "full_name": "keepingyouawake"
+        }
+      },
+      "libreoffice": {
+        "version": "7.5.3",
+        "options": {
+          "full_name": "libreoffice"
+        }
+      },
+      "notion": {
+        "version": "2.1.15",
+        "options": {
+          "full_name": "notion"
+        }
+      },
+      "rectangle": {
+        "version": "0.68",
+        "options": {
+          "full_name": "rectangle"
+        }
+      },
+      "ticktick": {
+        "version": "4.5.01,254",
+        "options": {
+          "full_name": "ticktick"
+        }
+      },
+      "slack": {
+        "version": "4.32.122",
+        "options": {
+          "full_name": "slack"
+        }
+      },
+      "visual-studio-code": {
+        "version": "1.78.1",
+        "options": {
+          "full_name": "visual-studio-code"
+        }
+      },
+      "spotify": {
+        "version": "1.2.10.760,52970952,1110",
+        "options": {
+          "full_name": "spotify"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "ventura": {
+        "HOMEBREW_VERSION": "4.0.17",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "14.3.0.0.1.1679647830",
+        "Xcode": "14.3",
+        "macOS": "13.3.1"
+      }
+    }
+  }
+}
