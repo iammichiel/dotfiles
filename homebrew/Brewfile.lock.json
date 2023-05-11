@@ -71,6 +71,48 @@
         "options": {
           "full_name": "spotify"
         }
+      },
+      "brave-browser": {
+        "version": "1.51.114.0,151.114",
+        "options": {
+          "full_name": "brave-browser"
+        }
+      },
+      "firefox": {
+        "version": "113.0",
+        "options": {
+          "full_name": "firefox"
+        }
+      },
+      "google-chrome": {
+        "version": "113.0.5672.92",
+        "options": {
+          "full_name": "google-chrome"
+        }
+      },
+      "dbeaver-community": {
+        "version": "23.0.4",
+        "options": {
+          "full_name": "dbeaver-community"
+        }
+      },
+      "postman": {
+        "version": "10.13.0",
+        "options": {
+          "full_name": "postman"
+        }
+      },
+      "sequel-ace": {
+        "version": "4.0.5,20046",
+        "options": {
+          "full_name": "sequel-ace"
+        }
+      },
+      "licecap": {
+        "version": "1.32",
+        "options": {
+          "full_name": "licecap"
+        }
       }
     }
   },
