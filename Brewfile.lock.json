@@ -2,12 +2,12 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "0030c1f06ef8b8b32da022ae8b95c7b104dc69b4"
+        "revision": "e4e4b0f27e15a9e24e4a091f81c1623168a33b47"
       }
     },
     "cask": {
       "keepassxc": {
-        "version": "2.7.4",
+        "version": "2.7.5",
         "options": {
           "full_name": "keepassxc"
         }
@@ -49,7 +49,7 @@
         }
       },
       "ticktick": {
-        "version": "4.5.01,254",
+        "version": "4.5.10,255",
         "options": {
           "full_name": "ticktick"
         }
@@ -79,7 +79,7 @@
         }
       },
       "firefox": {
-        "version": "113.0",
+        "version": "113.0.1",
         "options": {
           "full_name": "firefox"
         }
@@ -97,7 +97,7 @@
         }
       },
       "postman": {
-        "version": "10.13.0",
+        "version": "10.14.2",
         "options": {
           "full_name": "postman"
         }
@@ -124,6 +124,12 @@
         "version": "1.8.8",
         "options": {
           "full_name": "imageoptim"
+        }
+      },
+      "balenaetcher": {
+        "version": "1.18.4",
+        "options": {
+          "full_name": "balenaetcher"
         }
       }
     },
@@ -177,7 +183,7 @@
   "system": {
     "macos": {
       "ventura": {
-        "HOMEBREW_VERSION": "4.0.17",
+        "HOMEBREW_VERSION": "4.0.18",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.3.0.0.1.1679647830",

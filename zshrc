@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git gh aliases docker fzf macos sudo)
+plugins=(git gh aliases docker macos sudo)
 
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
@@ -76,3 +76,5 @@ export K_REVISION=test
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias dot-reload="~/.dotfiles/bin/install.sh"

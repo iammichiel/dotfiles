@@ -25,6 +25,7 @@ cask "spotify"
 cask "rectangle"
 cask "ticktick"
 cask "imageoptim"
+cask "balenaetcher"
 
 # And the brew formulaes
 brew "git"
