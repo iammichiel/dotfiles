@@ -29,6 +29,7 @@ cask "balenaetcher"
 
 # And the brew formulaes
 brew "git"
-
+brew "ripgrep"
+brew "fd"
 # MySQL, correct this and update 
 # brew "mysql@5.6", restart_service: true, link: true, conflicts_with: ["mysq
