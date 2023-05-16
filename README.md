@@ -1,7 +1,8 @@
 # Install 
 
 
-Run the following command to generate ssh-keys :
+Once the repo has been cloned in your home folder, run the following command : 
+
 ```
-ssh.sh
+~/.dotfiles/bin/install.sh
 ```
