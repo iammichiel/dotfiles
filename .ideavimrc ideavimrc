@@ -1,0 +1,20 @@
+syntax on
+
+" Highlight cursor line underneath the cursor horizontally.
+set cursorline
+
+" Highlight cursor line underneath the cursor vertically.
+set cursorcolumn
+
+" Set shift width to 4 spaces.
+set shiftwidth=4
+
+" Set tab width to 4 columns.
+set tabstop=4
+
+" Ignore capital letters during search.
+set ignorecase
+
+" Override the ignorecase option if searching for capital letters.
+" This will allow you to search specifically for capital letters.
+set smartcase

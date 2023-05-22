@@ -31,5 +31,16 @@ cask "balenaetcher"
 brew "git"
 brew "ripgrep"
 brew "fd"
+brew "dust"
+brew "exa"
+brew "redis"
+brew "wget"
+brew "httpie"
+brew "volta"
+brew "direnv"
+brew "htop"
+brew "bat"
+
+
 # MySQL, correct this and update 
 # brew "mysql@5.6", restart_service: true, link: true, conflicts_with: ["mysq

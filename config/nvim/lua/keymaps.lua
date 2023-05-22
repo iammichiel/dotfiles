@@ -8,7 +8,8 @@ local keymap = vim.keymap -- for conciseness
 --
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>") -- toggle file explorer
+keymap.set("n", "<leader>b", ":NvimTreeToggle<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
