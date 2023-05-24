@@ -6,15 +6,18 @@ cask "firefox"
 cask "google-chrome"
 
 # Code related tools
+cask "dbeaver-community"
 cask "iterm2"
 cask "jetbrains-toolbox"
-cask "dbeaver-community"
+cask "neovide"
 cask "postman"
 cask "visual-studio-code"
 cask "sequel-ace"
 
 # General tools
+cask "balenaetcher"
 cask "dozer"
+cask "imageoptim"
 cask "libreoffice"
 cask "notion"
 cask "keepassxc"
@@ -24,8 +27,6 @@ cask "slack"
 cask "spotify"
 cask "rectangle"
 cask "ticktick"
-cask "imageoptim"
-cask "balenaetcher"
 
 # And the brew formulaes
 brew "git"

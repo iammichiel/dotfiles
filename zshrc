@@ -23,6 +23,7 @@ source $ZSH/oh-my-zsh.sh
 alias sf="symfony"
 alias tf="terraform"
 alias vim="nvim"
+alias php="symfony php"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/michiel/workspace/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/michiel/workspace/google-cloud-sdk/path.zsh.inc'; fi
