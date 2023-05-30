@@ -26,6 +26,7 @@ alias vim="nvim"
 alias php="symfony php"
 alias ls="exa"
 alias dot-reload="~/.dotfiles/bin/install.sh"
+alias dot-edit="nvim ~/.dotfiles"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/michiel/workspace/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/michiel/workspace/google-cloud-sdk/path.zsh.inc'; fi
