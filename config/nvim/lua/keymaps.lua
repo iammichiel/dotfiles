@@ -3,10 +3,6 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
 
-
--- Plugins remaps
---
-
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>") -- toggle file explorer
 keymap.set("n", "<leader>b", ":NvimTreeToggle<CR>")
@@ -17,3 +13,6 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+
+-- LSP
+keymap.set("n", "<leader>h", "<cmd>vim.lsp.buf.code_action()<cr>")

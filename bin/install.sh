@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 set -ex
 
@@ -10,6 +10,7 @@ ln -s -f ~/.dotfiles/zshrc ~/.zshrc
 
 echo "Configuration of Git..."
 git config --global core.excludesfile ~/.dotfiles/global_gitignore
+git config --global core.editor nvim -f
 
 echo "Setting up nvim..."
 mkdir -p ~/.config
