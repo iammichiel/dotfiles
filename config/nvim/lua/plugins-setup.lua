@@ -49,7 +49,7 @@ return packer.startup(function(use)
     --  use("szw/vim-maximizer") -- maximizes and restores current window
     --
     --  -- essential plugins
-    --  use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
+    use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
     --  use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
     --
     -- commenting with gc
@@ -90,7 +90,8 @@ return packer.startup(function(use)
             {'hrsh7th/cmp-nvim-lsp'},
             {'hrsh7th/cmp-buffer'},
 
-            {'simrat39/rust-tools.nvim'} -- For rust code
+            {'simrat39/rust-tools.nvim'}, -- For rust code
+            {'folke/trouble.nvim'}
         }
     }
 
