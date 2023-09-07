@@ -18,10 +18,10 @@ lsp.format_on_save({
         async = false,
         timeout_ms = 1000,
     },
-    servers = {
-        ['lua_ls'] = { 'lua' },
-        ['rust_analyzer'] = { 'rust' }
-    }
+    -- servers = {
+    --     ['lua_ls'] = { 'lua' },
+    --     ['rust_analyzer'] = { 'rust' }
+    -- }
 })
 
 lsp.setup()
