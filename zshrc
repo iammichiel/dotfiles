@@ -28,12 +28,6 @@ alias ls="exa"
 alias dot-reload="~/.dotfiles/bin/install.sh"
 alias dot-edit="nvim ~/.dotfiles"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/michiel/workspace/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/michiel/workspace/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/michiel/workspace/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michiel/workspace/google-cloud-sdk/completion.zsh.inc'; fi
-
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 export VOLTA_HOME="$HOME/.volta"
@@ -56,3 +50,16 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/completion.zsh.inc'; fi
+
+# bun completions
+[ -s "/Users/mac-MMISSO27/.bun/_bun" ] && source "/Users/mac-MMISSO27/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

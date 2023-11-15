@@ -4,22 +4,24 @@ tap "shivammathur/php"
 # Web browsers
 cask "brave-browser"
 cask "firefox"
+cask "chromedriver"
 # cask "google-chrome" -- already installed by Workspace One, skipping in pro env.
 
 # Code related tools
 cask "dbeaver-community"
+cask "google-cloud-sdk"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "neovide"
 cask "postman"
 cask "visual-studio-code"
-cask "sequel-ace"
+cask "raindropio"
+# cask "sequel-ace" --disabled for now.
 
 # General tools
 cask "balenaetcher"
 cask "dozer"
 cask "imageoptim"
-cask "libreoffice"
 cask "notion"
 cask "keepassxc"
 cask "keepingyouawake"
@@ -30,10 +32,13 @@ cask "rectangle"
 cask "ticktick"
 
 # And the brew formulaes
+brew "act"
 brew "awscli"
 brew "bat"
 brew "cloc"
+# brew "colima"
 brew "direnv"
+brew "docker"
 brew "dust"
 brew "exa"
 brew "fd"
@@ -45,14 +50,19 @@ brew "httpie"
 brew "mitmproxy"
 brew "mysql@5.7", restart_service: true, link: true, conflicts_with: ["mysql"]
 brew "mysql-client@5.7", link: true
+brew "python-certifi" # is indirect dependency for HTTPIE. Sometime it is not installed ?
+brew "scw" # Scaleway cli
+brew "tree"
 brew "redis"
 brew "ripgrep"
 brew "volta"
+brew "watch"
 brew "wget"
 brew "zsh"
 
 # PHP related stuff
 brew "symfony-cli/tap/symfony-cli"
+brew "shivammathur/php/php@7.4"
 brew "shivammathur/php/php@8.1"
 brew "shivammathur/php/php@8.0"
 
