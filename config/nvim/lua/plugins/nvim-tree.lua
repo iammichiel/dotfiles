@@ -1,41 +1,15 @@
--- import nvim-tree plugin safely
-local setup, nvimtree = pcall(require, "nvim-tree")
-if not setup then
-  return
-end
+return {
+	"nvim-tree/nvim-tree.lua", 
+	requires = {
+		"nvim-tree/nvim-web-devicons"
+	},
+	config = function()
+		vim.g.loaded_netrw = 1
+		vim.g.loaded_netrwPlugin = 1
 
--- recommended settings from nvim-tree documentation
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+		require("nvim-tree").setup()
 
--- change color for arrows in tree to light blue
-vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
-
--- configure nvim-tree
-nvimtree.setup({
-  -- change folder arrow icons
-  renderer = {
-    icons = {
-      glyphs = {
-        folder = {
-          arrow_closed = "", -- arrow when folder is closed
-          arrow_open = "", -- arrow when folder is open
-        },
-      },
-    },
-  },
-  -- disable window_picker for
-  -- explorer to work well with
-  -- window splits
-  actions = {
-    open_file = {
-      window_picker = {
-        enable = false,
-      },
-    },
-  },
-  -- 	git = {
-  -- 		ignore = false,
-  -- 	},
-})
+		vim.keymap.set('n', '<leader>e', ":NvimTreeFocus<CR>");
+	end,
+}
 
