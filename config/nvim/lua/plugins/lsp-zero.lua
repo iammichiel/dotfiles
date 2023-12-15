@@ -5,8 +5,8 @@ lsp.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr }
 
     vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", opts)
-    vim.keymap.set("n", "<leader>lh", "<cmd>lua vim.lsp.buf.code_action()<cr>")
-    vim.keymap.set("n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
+    vim.keymap.set("n", "H", "<cmd>lua vim.lsp.buf.code_action()<cr>")
+    vim.keymap.set("n", "R", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
     vim.keymap.set("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format({async = true})<cr>", opts)
 end)
 
