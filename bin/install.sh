@@ -5,9 +5,6 @@ set -ex
 INSTALL_DIR="$(cd "$(dirname $(dirname "$0"))"; pwd)"
 echo $INSTALL_DIR
 
-echo "Creating a link to dotfiles folder..."
-ln -s -f $INSTALL_DIR ~/.dotfiles
-
 echo "Installing homebrew dependencies..."
 brew bundle --file $INSTALL_DIR/Brewfile
 
@@ -18,10 +15,11 @@ echo "Configuration of Git..."
 git config --global core.excludesfile $INSTALL_DIR/global_gitignore
 git config --global core.editor nvim -f
 
-echo "Setting up nvim..."
+echo "Setting up local config..."
 mkdir -p ~/.config
-rm -rf ~/.config/nvim
+rm -rf ~/.config/nvim ~/.config/httpie
 ln -s -f $INSTALL_DIR/config/nvim ~/.config/nvim
+ln -s -f $INSTALL_DIR/config/httpie ~/.config/httpie
 
 echo "Copying ideavimrc file..."
 ln -s -f $INSTALL_DIR/ideavimrc ~/.ideavimrc
