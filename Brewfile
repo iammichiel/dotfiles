@@ -47,11 +47,13 @@ brew "gh"
 brew "gnu-sed"
 brew "htop"
 brew "httpie"
+brew "jenv"
 brew "mitmproxy"
 brew "minio/stable/minio"
 brew "mysql@5.7", restart_service: true, link: true, conflicts_with: ["mysql"]
 brew "mysql-client@5.7", link: true
 brew "mtr"
+brew "openjdk@8"
 brew "python-certifi" # is indirect dependency for HTTPIE. Sometime it is not installed ?
 brew "scw" # Scaleway cli
 brew "terraform"

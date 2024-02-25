@@ -23,7 +23,7 @@ source $ZSH/oh-my-zsh.sh
 alias sf="symfony"
 alias tf="terraform"
 alias vim="nvim"
-alias php="symfony php"
+# alias php="symfony php"
 alias ls="exa"
 alias dot-reload="~/.dotfiles/bin/install.sh"
 alias dot-edit="nvim ~/.dotfiles"
@@ -50,16 +50,13 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/completion.zsh.inc'; fi
 
-# bun completions
-[ -s "/Users/mac-MMISSO27/.bun/_bun" ] && source "/Users/mac-MMISSO27/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

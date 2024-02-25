@@ -2,11 +2,11 @@
 
 set -ex
 
-INSTALL_DIR="$(cd "$(dirname $(dirname "$0"))"; pwd)"
+INSTALL_DIR="$(
+	cd "$(dirname $(dirname "$0"))"
+	pwd
+)"
 echo $INSTALL_DIR
-
-echo "Installing homebrew dependencies..."
-brew bundle --file $INSTALL_DIR/Brewfile
 
 echo "Setting up Oh-my-zsh configuration file..."
 ln -s -f $INSTALL_DIR/zshrc ~/.zshrc
@@ -28,3 +28,6 @@ ln -s -f $INSTALL_DIR/ideavimrc ~/.ideavimrc
 echo "Setting default shelel if not already done : "
 echo "Run the following command : "
 echo "    chsh -s /opt/homebrew/bin/zsh"
+
+echo "Installing homebrew dependencies..."
+brew bundle --file $INSTALL_DIR/Brewfile
