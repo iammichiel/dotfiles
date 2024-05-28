@@ -15,6 +15,7 @@ export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 export EDITOR=nvim
 export GIT_EDITOR=nvim
 export COMPOSER_TOKEN=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
+export DOTFILES="~/workspace/dotfiles"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -22,8 +23,11 @@ source $ZSH/oh-my-zsh.sh
 alias sf="symfony"
 alias tf="terraform"
 alias vim="nvim"
-# alias php="symfony php"
 alias ls="eza"
+
+alias dot-reload="$DOTFILES/bin/install.sh"
+alias dot-edit="nvim $DOTFILES"
+alias dot-brew="$DOTFILES/bin/brew.sh"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform

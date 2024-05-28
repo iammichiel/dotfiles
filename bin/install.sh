@@ -8,8 +8,9 @@ INSTALL_DIR="$(
 )"
 echo $INSTALL_DIR
 
-echo "Setting up Oh-my-zsh configuration file..."
+echo "Setting up Oh-my-zsh/Wezterm configuration file..."
 ln -s -f $INSTALL_DIR/zshrc ~/.zshrc
+ln -s -f $INSTALL_DIR/wezterm.lua ~/.wezterm.lua
 
 echo "Configuration of Git..."
 git config --global core.excludesfile $INSTALL_DIR/global_gitignore
@@ -29,5 +30,5 @@ echo "Setting default shelel if not already done : "
 echo "Run the following command : "
 echo "    chsh -s /opt/homebrew/bin/zsh"
 
-echo "Installing homebrew dependencies..."
-brew bundle --file $INSTALL_DIR/Brewfile
+
+echo "Homebrew is installed using another command : bin/brew.sh"
