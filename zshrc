@@ -23,11 +23,13 @@ source $ZSH/oh-my-zsh.sh
 alias sf="symfony"
 alias tf="terraform"
 alias vim="nvim"
-alias ls="eza"
+alias ls="eza --icons=always"
 
 alias dot-reload="$DOTFILES/bin/install.sh"
 alias dot-edit="nvim $DOTFILES"
 alias dot-brew="$DOTFILES/bin/brew.sh"
+
+eval "$(zoxide init zsh)"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
