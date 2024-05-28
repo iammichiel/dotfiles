@@ -5,6 +5,7 @@ cask_args appdir: "~/Applications"
 
 # Web browsers
 # cask "brave-browser" -- blocked.
+cask "font-meslo-lg-nerd-font"
 cask "firefox"
 cask "chromedriver"
 cask "raycast"
