@@ -46,6 +46,7 @@ brew "minio"
 brew "mysql@5.7", restart_service: true, link: true, conflicts_with: ["mysql"]
 brew "mysql-client@5.7", link: true
 brew "mtr"
+brew "powerlevel10k"
 brew "scw" # Scaleway cli
 brew "terraform"
 brew "tree"
@@ -55,7 +56,6 @@ brew "volta"
 brew "watch"
 brew "wget"
 brew "zsh"
-brew "zoxide"
 
 # PHP related stuff
 brew "symfony-cli/tap/symfony-cli"

@@ -5,19 +5,21 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export ZSH="$HOME/.oh-my-zsh"
-
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git gh aliases docker macos sudo)
+plugins=(git)
 
-export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
-export EDITOR=nvim
-export GIT_EDITOR=nvim
-export COMPOSER_TOKEN=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
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 export DOTFILES="~/workspace/dotfiles"
 
-source $ZSH/oh-my-zsh.sh
+export EDITOR=nvim
+export GIT_EDITOR=nvim
+export VOLTA_HOME="$HOME/.volta"
+export COMPOSER_TOKEN=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
+
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Example aliases
 alias sf="symfony"
@@ -29,19 +31,7 @@ alias dot-reload="$DOTFILES/bin/install.sh"
 alias dot-edit="nvim $DOTFILES"
 alias dot-brew="$DOTFILES/bin/brew.sh"
 
-eval "$(zoxide init zsh)"
-
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mac-MMISSO27/workspace/t/google-cloud-sdk/completion.zsh.inc'; fi
-
