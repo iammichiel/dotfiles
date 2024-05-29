@@ -6,7 +6,7 @@ cask_args appdir: "~/Applications"
 # Web browsers
 # cask "brave-browser" -- blocked.
 cask "font-meslo-lg-nerd-font"
-cask "firefox"
+# cask "firefox" -- installed 
 cask "chromedriver"
 cask "raycast"
 # cask "google-chrome" -- already installed by Workspace One, skipping in pro env.
@@ -18,12 +18,10 @@ cask "neovide"
 cask "visual-studio-code"
 cask "raindropio"
 cask "wezterm"
-# cask "sequel-ace" --disabled for now.
 
 # General tools
 cask "dozer"
 cask "imageoptim"
-cask "notion"
 cask "keepingyouawake"
 cask "rectangle"
 cask "ticktick"
@@ -44,7 +42,7 @@ brew "gh"
 brew "gnu-sed"
 brew "htop"
 brew "httpie"
-brew "minio/stable/minio"
+brew "minio"
 brew "mysql@5.7", restart_service: true, link: true, conflicts_with: ["mysql"]
 brew "mysql-client@5.7", link: true
 brew "mtr"
