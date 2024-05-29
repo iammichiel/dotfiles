@@ -7,12 +7,13 @@ fi
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git)
+plugins=(git ls)
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export DOTFILES="~/workspace/dotfiles"
 
+export ZSH_LS_BACKEND="eza"
 export EDITOR=nvim
 export GIT_EDITOR=nvim
 export VOLTA_HOME="$HOME/.volta"
@@ -25,7 +26,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 alias sf="symfony"
 alias tf="terraform"
 alias vim="nvim"
-alias ls="eza --icons=always"
 
 alias dot-reload="$DOTFILES/bin/install.sh"
 alias dot-edit="nvim $DOTFILES"
