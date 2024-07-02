@@ -7,29 +7,31 @@ fi
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git ls)
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export DOTFILES="~/workspace/dotfiles"
 
-export ZSH_LS_BACKEND="eza"
 export EDITOR=nvim
 export GIT_EDITOR=nvim
 export VOLTA_HOME="$HOME/.volta"
-export COMPOSER_TOKEN=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
-
-export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
-export PATH="$VOLTA_HOME/bin:$PATH"
+export PHP="symfony php"
 
 # Example aliases
 alias sf="symfony"
 alias tf="terraform"
 alias vim="nvim"
+alias php="sf php"
 
 alias dot-reload="$DOTFILES/bin/install.sh"
 alias dot-edit="nvim $DOTFILES"
 alias dot-brew="$DOTFILES/bin/brew.sh"
+
+# This has to be set first
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="$VOLTA_HOME/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"
+
+plugins=(git eza)
 
 source $ZSH/oh-my-zsh.sh
 
