@@ -1,6 +1,8 @@
 #!/bin/bash 
 
 if [ -z "$CODESPACES" ]; then
+    echo "Not running in Codespaces, juste skip this file..."
+else 
     INSTALL_DIR="$(
         cd "$(dirname $(dirname "$0"))"
         pwd
