@@ -35,5 +35,11 @@ plugins=(git eza)
 
 source $ZSH/oh-my-zsh.sh
 
+# Jenv specific
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+eval "$(direnv hook zsh)"
+#
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

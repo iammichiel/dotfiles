@@ -9,6 +9,11 @@ else
     )"
     echo $INSTALL_DIR
 
+    echo "Installing powerlevel10k..."
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+    echo "Installing eza..."
+
     echo "Setting up Oh-my-zsh configuration file..."
     ln -s -f $INSTALL_DIR/zshrc ~/.zshrc
 
