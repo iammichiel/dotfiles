@@ -6,7 +6,7 @@ cask_args appdir: "~/Applications"
 # Web browsers
 # cask "brave-browser" -- blocked.
 cask "font-meslo-lg-nerd-font"
-# cask "firefox" -- installed 
+# cask "firefox" -- installed
 cask "chromedriver"
 cask "raycast"
 # cask "google-chrome" -- already installed by Workspace One, skipping in pro env.
@@ -59,6 +59,7 @@ brew "postgresql@16"
 brew "pv"
 brew "scw" # Scaleway cli
 brew "terraform"
+brew "tmux"
 brew "tree"
 brew "redis"
 brew "ripgrep"
