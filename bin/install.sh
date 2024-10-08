@@ -25,10 +25,12 @@ ln -s -f $INSTALL_DIR/.config/httpie ~/.config/httpie
 echo "Copying ideavimrc file..."
 ln -s -f $INSTALL_DIR/ideavimrc ~/.ideavimrc
 
+echo "Copying tmux.conf file..."
+ln -s -f $INSTALL_DIR/tmux.conf ~/.tmux.conf
+
 # Setting Zsh as default shell
 echo "Setting default shelel if not already done : "
 echo "Run the following command : "
 echo "    chsh -s /opt/homebrew/bin/zsh"
 
-
-echo "Homebrew is installed using another command : bin/brew.sh"
+echo "⚠️ Homebrew is installed using another command : bin/brew.sh"
