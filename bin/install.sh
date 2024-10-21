@@ -21,6 +21,7 @@ mkdir -p ~/.config
 rm -rf ~/.config/nvim ~/.config/httpie
 ln -s -f $INSTALL_DIR/.config/nvim ~/.config/nvim
 ln -s -f $INSTALL_DIR/.config/httpie ~/.config/httpie
+ln -s -f $INSTALL_DIR/.config/tmux ~/.config/tmux
 
 echo "Copying ideavimrc file..."
 ln -s -f $INSTALL_DIR/ideavimrc ~/.ideavimrc

@@ -1,8 +1,8 @@
-#!/bin/bash 
+#!/bin/bash
 
 if [ -z "$CODESPACES" ]; then
     echo "Not running in Codespaces, juste skip this file..."
-else 
+else
     INSTALL_DIR="$(
         cd "$(dirname $(dirname "$0"))"
         pwd
@@ -26,4 +26,5 @@ else
     rm -rf ~/.config/nvim ~/.config/httpie
     ln -s -f $INSTALL_DIR/.config/nvim ~/.config/nvim
     ln -s -f $INSTALL_DIR/.config/httpie ~/.config/httpie
+    ln -s -f $INSTALL_DIR/.config/zellij ~/.config/zellij
 fi

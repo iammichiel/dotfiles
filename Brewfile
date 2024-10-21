@@ -1,6 +1,7 @@
 tap "shivammathur/php"
 tap "symfony-cli/tap"
 tap "blackfireio/homebrew-blackfire"
+tap "batterii/haproxy-lua"
 
 cask_args appdir: "~/Applications"
 
@@ -34,6 +35,7 @@ cask "ticktick"
 # And the brew formulaes
 brew "act"
 brew "bat"
+brew "batterii/haproxy-lua/haproxy"
 brew "blackfire"
 brew "blackfire-php82"
 brew "blackfire-php83"
@@ -74,6 +76,7 @@ brew "volta"
 brew "watch"
 brew "watchman"
 brew "wget"
+brew "zellij"
 brew "zsh"
 
 # PHP related stuff
