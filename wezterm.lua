@@ -44,6 +44,11 @@ config.keys = {
         key = '[',
         mods = 'CMD',
         action = wezterm.action.ActivatePaneDirection 'Prev',
+    },
+    {
+        key = 'm',
+        mods = 'CMD',
+        action = wezterm.action.ToggleFullScreen,
     }
 }
 -- and finally, return the configuration to wezterm
