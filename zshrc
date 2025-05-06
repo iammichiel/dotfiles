@@ -22,6 +22,7 @@ alias sf="symfony"
 alias tf="terraform"
 alias vim="nvim"
 alias php="sf php"
+alias lg="lazygit"
 
 alias dot-reload="$DOTFILES/bin/install.sh"
 alias dot-edit="nvim $DOTFILES"
@@ -31,6 +32,10 @@ alias dot-brew="$DOTFILES/bin/brew.sh"
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"
+export PATH="$HOME/Library/Android/sdk/tools:$PATH"
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+# Copilot breaks because of Zscaler in Node.
+export NODE_EXTRA_CA_CERTS="/Users/MAC-MMISSO27/.zscaler.pem"
 
 plugins=(git eza)
 

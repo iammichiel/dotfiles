@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 
 require("core")
+require("neovide")
 require("lazy").setup("plugins")
 
 vim.cmd ":colorscheme tokyonight"
