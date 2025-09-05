@@ -18,10 +18,11 @@ git config --global core.editor nvim -f
 
 echo "Setting up local config..."
 mkdir -p ~/.config
-rm -rf ~/.config/nvim ~/.config/httpie ~/.config/tmux
+rm -rf ~/.config/nvim ~/.config/httpie ~/.config/tmux ~/.config/skhd
 ln -s -f $INSTALL_DIR/config/nvim ~/.config/nvim
 ln -s -f $INSTALL_DIR/config/httpie ~/.config/httpie
 ln -s -f $INSTALL_DIR/config/tmux ~/.config/tmux
+ln -s -f $INSTALL_DIR/config/skhd ~/.config/skhd
 
 echo "Copying ideavimrc file..."
 ln -s -f $INSTALL_DIR/ideavimrc ~/.ideavimrc

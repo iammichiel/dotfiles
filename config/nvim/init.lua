@@ -15,6 +15,7 @@ vim.g.mapleader = " "
 
 require("core")
 require("neovide")
+require("font")
 require("lazy").setup("plugins")
 
 vim.cmd ":colorscheme tokyonight"
