@@ -22,7 +22,11 @@ opt.smartcase = true  -- if you include mixed case in your search, assumes you w
 opt.cursorline = true -- highlight the current cursor line
 
 -- Using system clipboard
-opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+opt.clipboard:append("unnamedplus")                                                      -- use system clipboard as default register
 
-opt.iskeyword:append("-")           -- consider string-string as whole word
+opt.iskeyword:append("-")                                                                -- consider string-string as whole word
 
+vim.api.nvim_set_keymap('n', '<C-s>h', ':vsplit<CR>', { noremap = true, silent = true }) -- vertical
+vim.api.nvim_set_keymap('n', '<C-s>j', ':split<CR>', { noremap = true, silent = true })  -- horizontal
+vim.api.nvim_set_keymap('n', '<C-s>k', ':split<CR>', { noremap = true, silent = true })  -- horizontal
+vim.api.nvim_set_keymap('n', '<C-s>l', ':vsplit<CR>', { noremap = true, silent = true }) -- vertical

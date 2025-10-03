@@ -22,7 +22,7 @@ rm -rf ~/.config/nvim ~/.config/httpie ~/.config/tmux ~/.config/skhd
 ln -s -f $INSTALL_DIR/config/nvim ~/.config/nvim
 ln -s -f $INSTALL_DIR/config/httpie ~/.config/httpie
 ln -s -f $INSTALL_DIR/config/tmux ~/.config/tmux
-ln -s -f $INSTALL_DIR/config/skhd ~/.config/skhd
+ln -s -f $INSTALL_DIR/config/docker ~/.docker
 
 echo "Copying ideavimrc file..."
 ln -s -f $INSTALL_DIR/ideavimrc ~/.ideavimrc
@@ -34,8 +34,8 @@ echo "Copying Zscaler.pem file..."
 ln -s -f $INSTALL_DIR/zscaler.pem ~/.zscaler.pem
 
 # Setting Zsh as default shell
-echo "Setting default shelel if not already done : "
+echo "Setting default shell if not already done : "
 echo "Run the following command : "
 echo "    chsh -s /opt/homebrew/bin/zsh"
 
-echo "⚠️ Homebrew is installed using another command : bin/brew.sh"
+echo "⚠️ Homebrew packages are installed using another command : bin/brew.sh"

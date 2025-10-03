@@ -36,8 +36,15 @@ export PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"
 export PATH="$HOME/Library/Android/sdk/tools:$PATH"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 # Copilot breaks because of Zscaler in Node.
-export NODE_EXTRA_CA_CERTS="/Users/MAC-MMISSO27/.zscaler.pem"
+#export NODE_EXTRA_CA_CERTS="/Users/MAC-MMISSO27/.zscaler.pem"
 
+
+# Android Studio - Tauri apps
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
+
+# Loading the OMZ plugins.
 plugins=(git eza)
 
 source $ZSH/oh-my-zsh.sh
@@ -52,3 +59,10 @@ eval "$(zoxide init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"
