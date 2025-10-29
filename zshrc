@@ -24,6 +24,12 @@ alias vim="nvim"
 alias php="sf php"
 alias lg="lazygit"
 alias cd="z"
+alias oc="NODE_EXTRA_CA_CERTS=~/zscaler.pem opencode"
+
+alias star="zsh -f -c 'eval \"\$(starship init zsh)\"; exec zsh'"
+
+alias dot-aero="$DOTFILES/bin/aero.sh"
+alias dot-native="$DOTFILES/bin/native.sh"
 
 alias dot-reload="$DOTFILES/bin/install.sh"
 alias dot-edit="nvim $DOTFILES"
@@ -35,9 +41,10 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"
 export PATH="$HOME/Library/Android/sdk/tools:$PATH"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
-# Copilot breaks because of Zscaler in Node.
-#export NODE_EXTRA_CA_CERTS="/Users/MAC-MMISSO27/.zscaler.pem"
+export PATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"
 
+# Copilot breaks because of Zscaler in Node.
+export NODE_EXTRA_CA_CERTS="/Users/MAC-MMISSO27/zscaler.pem"
 
 # Android Studio - Tauri apps
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
@@ -56,6 +63,12 @@ eval "$(jenv init -)"
 eval "$(direnv hook zsh)"
 
 eval "$(zoxide init zsh)"
+
+source <(fzf --zsh)
+
+# Enabling VI mode in Zsh
+set -o vi
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
