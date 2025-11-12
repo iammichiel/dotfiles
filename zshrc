@@ -44,7 +44,7 @@ export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 export PATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"
 
 # Copilot breaks because of Zscaler in Node.
-export NODE_EXTRA_CA_CERTS="/Users/MAC-MMISSO27/zscaler.pem"
+# export NODE_EXTRA_CA_CERTS="/Users/MAC-MMISSO27/zscaler.pem"
 
 # Android Studio - Tauri apps
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
