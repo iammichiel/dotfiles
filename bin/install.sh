@@ -19,14 +19,20 @@ git config --global core.editor nvim -f
 echo "Setting up local config..."
 rm -rf \
     ~/.config/aerospace \
+    ~/.config/ghostty \
     ~/.config/httpie \
     ~/.config/nvim \
-    ~/.config/sketchybar
+    ~/.config/opencode \
+    ~/.config/sketchybar \
+    ~/.config/starship
 
 ln -s -f $INSTALL_DIR/config/aerospace ~/.config/aerospace
+ln -s -f $INSTALL_DIR/config/ghostty ~/.config/ghostty
 ln -s -f $INSTALL_DIR/config/httpie ~/.config/httpie
 ln -s -f $INSTALL_DIR/config/nvim ~/.config/nvim
+ln -s -f $INSTALL_DIR/config/opencode ~/.config/opencode
 ln -s -f $INSTALL_DIR/config/sketchybar ~/.config/sketchybar
+ln -s -f $INSTALL_DIR/config/starship ~/.config/starship
 
 echo "Copying ideavimrc file..."
 ln -s -f $INSTALL_DIR/ideavimrc ~/.ideavimrc
@@ -38,5 +44,3 @@ ln -s -f $INSTALL_DIR/tmux.conf ~/.tmux.conf
 echo "Setting default shell if not already done : "
 echo "Run the following command : "
 echo "    chsh -s /opt/homebrew/bin/zsh"
-
-echo "⚠️ Homebrew packages are installed using another command : bin/brew.sh"

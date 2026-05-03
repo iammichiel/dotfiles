@@ -3,7 +3,7 @@
 
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+after-startup-command = ['exec-and-forget sketchybar']
 
 # Start AeroSpace at login
 start-at-login = true
@@ -65,6 +65,29 @@ exec-on-workspace-change = ['/bin/bash', '-c',
     ]
     outer.right =      0
 
+[[on-window-detected]]
+    if.app-id = 'com.brave.Browser'
+    run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+    if.app-id = 'com.mitchellh.ghostty'
+    run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
+    if.app-id = 'com.jetbrains.PhpStorm'
+    run = ['move-node-to-workspace 3']
+
+[[on-window-detected]]
+    if.app-id = 'com.tinyspeck.slackmacgap'
+    run = ['move-node-to-workspace 4']
+
+[[on-window-detected]]
+    if.app-id = 'com.sequel-ace.sequel-ace'
+    run = ['move-node-to-workspace 5']
+
+[[on-window-detected]]
+    if.app-id = 'com.deezer.deezer-desktop'
+    run = ['move-node-to-workspace 7']
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
