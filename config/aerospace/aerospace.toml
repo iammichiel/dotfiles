@@ -87,7 +87,7 @@ exec-on-workspace-change = ['/bin/bash', '-c',
 
 [[on-window-detected]]
     if.app-id = 'com.deezer.deezer-desktop'
-    run = ['move-node-to-workspace 7']
+    run = ['move-node-to-workspace 9']
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes

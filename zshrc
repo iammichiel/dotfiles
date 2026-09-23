@@ -68,21 +68,15 @@ alias dot-edit="nvim $DOTFILES"
 alias dot-brew="$DOTFILES/bin/brew.sh"
 alias dot-brew-clean="$DOTFILES/bin/brew-clean.sh"
 
-alias taild="tailscaled --tun=userspace-networking --state=/Users/michiel/.tailscale-state/tailscaled.state --socket=/Users/michiel/.tailscale-state/tailscale.socket --socks5-server=localhost:1055"
-alias tailup="tailscale --socket=/Users/michiel/.tailscale-state/tailscale.socket up"
-alias ts="tailscale --socket=/Users/michiel/.tailscale-state/tailscale.socket"
-
 
 # This has to be set first
-export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="$VOLTA_HOME/bin:$PATH"
-export PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"
 export PATH="$HOME/Library/Android/sdk/tools:$PATH"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 export PATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
-export PATH="/Users/michiel/.antigravity/antigravity/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"
+export PATH="/Users/michiel/.local/bin:$PATH"
 
 # Copilot breaks because of Zscaler in Node.
 # export NODE_EXTRA_CA_CERTS="/Users/MAC-MMISSO27/zscaler.pem"
@@ -115,3 +109,11 @@ if [ -f '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc' ]; then . '/op
 # This is terminal integration for VSCode.
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/michiel/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
